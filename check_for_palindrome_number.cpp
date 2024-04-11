@@ -25,3 +25,5 @@ int main()
     cin>>n;
     palindrome(n);
 }
+//time complexity=o(d),where d is the number of digits or O(log10(n))
+//auxiliary space:O(1) or constant
