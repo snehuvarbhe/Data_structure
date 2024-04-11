@@ -1,4 +1,5 @@
-/*This program is to find factorial of a number*/
+//Given an integer, write a function that returns its factorial value 
+
 #include<iostream>
 using namespace std;
 void factorial(int a)
