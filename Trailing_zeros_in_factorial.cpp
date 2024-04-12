@@ -1,6 +1,7 @@
 //Given an integer, write a function that returns the number of trailing zeros in factorial
 #include<iostream>
 using namespace std;
+/*this method first calculates the factorial and then calculates the trailig zeroes in it*/
 int trailz(int b)
 {
     int f=1,answer,count=0;
@@ -20,7 +21,7 @@ int trailz(int b)
     }
     return count;
 }
-
+/* this function uses formula to calculat the number of zero*/
 int trailingzero(int a)
 {
     int n=0,b=5;
@@ -31,8 +32,7 @@ int trailingzero(int a)
     }
     return n;
 }
-
-
+/*main function takes the input number and calls the functions trailing zero and trailz to calculate the number of zeroes at the end of the number*/
 int main()
 {
     int n;
