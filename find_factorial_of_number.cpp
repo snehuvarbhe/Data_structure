@@ -1,6 +1,7 @@
 //Given an integer, write a function that returns its factorial value 
 #include<iostream>
 using namespace std;
+/*fct function calculate factorila of a number using loop*/
 int fact(int a)
 {
     int fact=1;
@@ -10,12 +11,14 @@ int fact(int a)
     }
     return fact;
 }
+/*recfact function uses recurssion method and calls function within function till the value reaches 1 to calculate factorial*/
 int recfact(int k)
 {
     if(k==1 || k==0)
         return 1;
     return k*recfact(k-1);
 }
+/*main function takes the input number and calls the functions fact and recfact to calculate th factorial of number by looping and by recursion method*/
 int main()
 {
     int n;
