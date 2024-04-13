@@ -50,7 +50,9 @@ int main()
     cin>>a>>b;
     cout<<"HCF is"<<hcf(a,b)<<'\n';
     cout<<"HCF is"<<hcf_euclidean(a,b)<<'\n';
-    cout<<"HCF is"<<hcf_div(a,b);
+    cout<<"HCF is"<<hcf_div(a,b)<<'\n';
+    int k=(a*b)/hcf_div(a,b);
+    cout<<"lcm is"<<k;
 }
 //hcf: time complexity=O(min(a,b))
 //hcf_euclidean: time complexity=O(max(a,b)), auxilliary:=O(max(a,b))
