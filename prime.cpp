@@ -21,6 +21,9 @@ void prime(int a,int b)
         }
     }
 }
+/* time complexity:O(sqrt(ab))
+   auxiliary space:O(1)*/
+
 /* this function optimizer the process, first it checks for 2 then 3 and then their multile and the 
 remaining once are checked last*/
 int primef(int a,int b)
@@ -44,6 +47,9 @@ int primef(int a,int b)
             cout<<i<<',';
     }
 }
+/* time complexity:O(sqrt(n))
+   auxiliary space:O(1)*/
+
 /*main function */
 int main()
 {
