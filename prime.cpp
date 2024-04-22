@@ -21,6 +21,29 @@ void prime(int a,int b)
         }
     }
 }
+/* this function optimizer the process, first it checks for 2 then 3 and then their multile and the 
+remaining once are checked last*/
+int primef(int a,int b)
+{
+    for(int i=a;i<b;i++)
+    {
+        if(i<=1)
+            continue;
+        if(i==2 || i==3)
+            cout<<i<<',';
+        if(i%2==0 || i%3==0)
+            continue;
+        for(int j=5; j*j<i;j=j+6)
+        {
+            if(i%j==0 || i%(j+2)==0)
+            {
+                continue;
+            }
+        }
+        if(i>3)
+            cout<<i<<',';
+    }
+}
 /*main function */
 int main()
 {
@@ -30,5 +53,6 @@ int main()
     cin>>a>>b;
     if(a>b)
         goto stmt;
-    prime(a,b);/*start and end values of range is input to the function*/
+    prime(a,b);
+    primef(a,b);/*start and end values of range is input to the function*/
 }
