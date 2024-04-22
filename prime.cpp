@@ -24,5 +24,11 @@ void prime(int a,int b)
 /*main function */
 int main()
 {
-    prime(3,11);/*start and end values of range is input to the function*/
+    int a,b;
+    stmt:
+    cout<<"Enter upper and lower limit values";
+    cin>>a>>b;
+    if(a>b)
+        goto stmt;
+    prime(a,b);/*start and end values of range is input to the function*/
 }
